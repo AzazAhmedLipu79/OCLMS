@@ -1,12 +1,39 @@
 * {
   scroll-behavior: smooth;
+  margin:0;
+  padding:0;
+}
+ 
+
+::selection {
+  background-color: #ee9d08;
+  color: white;
+}
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(0, 21, 21);
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+:hover::-webkit-scrollbar-thumb {
+  background: #4a4a4a;
+}
+
+:hover::-webkit-scrollbar-thumb {
+  background: #cfcfcf;
 }
 
 .app {
   min-height: 100vh;
-  background-color: #39445a;
+  background-color: #0a1929;
   color: white;
-  padding-top: 130px;
+  padding-top: 70px;
   padding-bottom: 70px;
 }
 
