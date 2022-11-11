@@ -154,7 +154,7 @@ class SingleVideo extends Component {
    
      <div className=" mx-auto ">
  
-     <Box className="  bg-gradient-to-r from-gray-400 to-slate-700  " sx={{ width: '100%'}}> 
+     <Box className="  bg-gradient-to-r from-slate-700 to-slate-800  " sx={{ width: '100%'}}> 
     
 <div className="zz relative">
  
@@ -163,7 +163,7 @@ class SingleVideo extends Component {
  ref={this.ref}
  className='react-player'
  width="100%"
- height="65vh"
+ height="80vh"
  url={url}
  pip={pip}
  playing={playing}
@@ -187,13 +187,13 @@ class SingleVideo extends Component {
 />
  
 </div>
-<Box>
+<Box sx={{ height:"5vh"}}>
    
      <input class="
       form-range
       appearance-none
     w-full
-      h-2
+      
       p-0
       bg-slate-900 -px-2
       focus:outline-none focus:ring-0 focus:shadow-none

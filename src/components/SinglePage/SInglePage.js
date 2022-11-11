@@ -3,6 +3,7 @@ import SingleVideo from "./SingleVideo";
 import { FullScreen, useFullScreenHandle } from "react-full-screen";
 import FullscreenIcon from '@mui/icons-material/Fullscreen';
 import { IconButton, Skeleton } from "@mui/material";
+import { Fab } from "@material-ui/core";
 
 const SinglePage = () => {
   // const { id } = useParams();  
@@ -23,19 +24,30 @@ const SinglePage = () => {
 
     return (
      <>
-   <IconButton  onClick={handle.enter}  size="large"  >
-       
-       <FullscreenIcon   className="rounded-full  text-blue-600  bg-blue-200" />
-     </IconButton > 
- 
+  
+   
        <FullScreen  color="secondary" handle={handle}>
      
-     <SingleVideo/>
+     <SingleVideo className="video"/>
     
      </FullScreen>
+     
+     <div className="mybutton">
+      
+     <Fab  color="secondary" onClick={handle.enter}  aria-label="fullscreen mode">
+     <FullscreenIcon  className="rounded-full  " />
+      </Fab>
+</div>
+   
+  
+ 
      </>
     );
   };
   
   export default SinglePage;
+  
+
+
+
   

@@ -2,6 +2,7 @@
   scroll-behavior: smooth;
   margin:0;
   padding:0;
+  
 }
  
 
@@ -28,6 +29,19 @@
 :hover::-webkit-scrollbar-thumb {
   background: #cfcfcf;
 }
+
+.video{
+  height:80vh;
+}
+
+ 
+.mybutton {
+  z-index: 100;
+  position: fixed;
+  bottom: 60px;
+  right: 10px;
+}
+
 
 .app {
   min-height: 100vh;
